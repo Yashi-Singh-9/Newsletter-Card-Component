@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #e6e9fb;
+  font-size: 1.3rem;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 10px 10px #f2f2fe;
+  text-align: center;
+  width: 95%;
+  margin: 120px auto;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 1.6rem auto;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1.4rem auto;
+  color: #374151;
+  max-width: 550px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signform {
+  display: flex;
+  gap: 5px;
+  margin: 1.5rem auto;
+}
+
+input[type="email"],
+input[type="email"]:focus {
+  padding: 0.75rem 1rem;
+  font-size: 18px;
+  border: 1px solid #b3b8d8;
+  border-radius: 8px;
+  width: 450px;
+  height: 72px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: #fafaff;
+}
+
+input[type="email"]::placeholder {
+  color: #b3b8d8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  background-color: #111827;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  height: 72px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16213b;
+}
+
+.checkbox-label {
+  margin-left: -10px;
+  font-size: 14px;
+  color: #666;
+  max-width: 600px;
+  width: 90%;
+  accent-color: #111827;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.popup {
+  display: none; /* Initially hide the popup */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+}
+
+#closePopup {
+  position: absolute;
+  top: 10px; /* Move close button above content */
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #111827;
+  border: none;
+  background: none;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 720px) {
+  .signform {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input[type="email"],
+  button {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  button {
+    height: 64px; /* Adjust button height */
+  }
+
+  .popup-content {
+    padding: 1.5rem; /* Slightly reduce padding on smaller screens */
+  }
+}
