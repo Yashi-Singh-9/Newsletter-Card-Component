@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Newsletter Card Component</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <h1>Level Up Your Frontend Skills</h1>
+          <p>Sign up for our free newsletter to receive weekly coding challenges that will help you improve your frontend development skills.</p>
+          <form id="signupForm" novalidate>
+            <div class="signform">
+              <input type="email" id="email" placeholder="Enter your email address" required>
+              <button type="submit">Subscribe</button>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+            <label class="checkbox-label">
+              <input type="checkbox" id="agreement" required>
+              By checking this box, you agree to receive our weekly newsletter containing coding challenges, tips, and other related content. You may unsubscribe from the newsletter at any time.
+            </label>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Popup -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="closePopup">&times;</span> <!-- Close button -->
+          <p>Thank you for subscribing!</p> <!-- Thanks message -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
