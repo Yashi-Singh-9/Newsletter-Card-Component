@@ -22,6 +22,14 @@ This project is a solution for the [FrontendPro Newsletter Card Component Challe
 - **CSS3**: For styling and layout, including media queries for responsiveness.
 - **JavaScript (ES6)**: For form validation and dynamic behavior, such as displaying the popup and handling form submission.
 
+## Screenshot
+
+![](Screenshot.png)
+
+## Live Demo 
+
+Have a Live Preview: https://newsletter-card-component.netlify.app/
+
 ## Installation and Setup
 
 To view or modify this project on your local machine, follow these steps:
