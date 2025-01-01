@@ -47,25 +47,35 @@ To view or modify this project locally, follow these steps:
    cd Newsletter-Card-Component
    ```
 
-3. Install dependencies (if using a SCSS preprocessor):
-
-   ```bash
-   npm install
-   ```
-
-4. Compile SCSS to CSS (if modifying SCSS):
-
-   ```bash
-   npm run build
-   ```
-
-5. Open the `index.html` file in your browser to view the component:
+3. Open the `index.html` file in your browser to view the component:
 
    ```bash
    open index.html
    ```
 
-   Alternatively, use a local development server like `Live Server` in Visual Studio Code.
+   Alternatively, use a local development server like the `Live Server` extension in Visual Studio Code.
+
+### For Developers Editing SCSS
+
+If you want to make changes to the SCSS file (`style.scss`), you’ll need to compile it into CSS. Here’s how:
+
+1. **Install Node.js** (if you don’t already have it). Download it from [nodejs.org](https://nodejs.org/).
+
+2. Install the Sass preprocessor globally:
+
+   ```bash
+   npm install -g sass
+   ```
+
+3. Compile the SCSS file into CSS:
+
+   ```bash
+   sass style.scss style.css
+   ```
+
+   This will overwrite the existing `style.css` file with the compiled CSS.
+
+4. Reload the `index.html` file in your browser to see your changes.
 
 ## How It Works
 
