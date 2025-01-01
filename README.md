@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a responsive Newsletter Signup Card Component built using HTML, CSS, and JavaScript. The component allows users to subscribe to a newsletter by entering their email address and accepting the terms and conditions. Upon successful subscription, a popup message is displayed to confirm the subscription. The project is fully responsive, adapting to different screen sizes, including mobile devices.
+This project is a responsive **Newsletter Signup Card Component** created using HTML, SCSS, Bootstrap, and JavaScript. The component enables users to subscribe to a newsletter by entering their email address and accepting the terms and conditions. Upon successful subscription, a popup message is displayed to confirm the subscription. The component is fully responsive, providing an optimized experience on different screen sizes, including mobile devices.
 
 ### Challenge Source
 
@@ -10,29 +10,30 @@ This project is a solution for the [FrontendPro Newsletter Card Component Challe
 
 ## Features
 
-- **Responsive Design**: Adjusts to different screen sizes, ensuring a seamless user experience on desktop, tablet, and mobile devices.
-- **Email Validation**: The form checks if the entered email is valid before allowing the user to submit the form.
-- **Terms Agreement**: Users must agree to the terms and conditions by checking a checkbox before submitting the form.
-- **Popup Confirmation**: After successful submission, a popup displays a thank-you message confirming the subscription.
-- **Closeable Popup**: The popup can be closed by clicking on the close (×) button.
+- **Responsive Design**: Leverages Bootstrap and custom SCSS to ensure a seamless experience on devices of all sizes.
+- **Email Validation**: Validates the email format before allowing the user to submit the form.
+- **Terms Agreement**: Requires users to check a checkbox agreeing to the terms and conditions before subscribing.
+- **Popup Confirmation**: Displays a thank-you popup message after successful submission.
+- **Closeable Popup**: Allows users to close the popup via a close (×) button or by clicking outside the popup area.
 
 ## Technologies Used
 
-- **HTML5**: For structuring the content.
-- **CSS3**: For styling and layout, including media queries for responsiveness.
-- **JavaScript (ES6)**: For form validation and dynamic behavior, such as displaying the popup and handling form submission.
+- **HTML5**: For the structure of the component.
+- **SCSS**: For modular, reusable, and scalable styling, with nesting and variables for flexibility.
+- **Bootstrap**: For responsive grid and utility classes, reducing the need for custom CSS.
+- **JavaScript (ES6)**: For form validation, dynamic popup display, and user interactions.
 
 ## Screenshot
 
-![](Screenshot.png)
+![Newsletter Card Component](Screenshot.png)
 
-## Live Demo 
+## Live Demo
 
-Have a Live Preview: https://yashi-singh-9.github.io/Newsletter-Card-Component/
+Explore the live version here: [Newsletter Card Component](https://yashi-singh-9.github.io/Newsletter-Card-Component/)
 
 ## Installation and Setup
 
-To view or modify this project on your local machine, follow these steps:
+To view or modify this project locally, follow these steps:
 
 1. Clone the repository:
 
@@ -46,56 +47,73 @@ To view or modify this project on your local machine, follow these steps:
    cd Newsletter-Card-Component
    ```
 
-3. Open the `index.html` file in your browser to view the component.
+3. Install dependencies (if using a SCSS preprocessor):
+
+   ```bash
+   npm install
+   ```
+
+4. Compile SCSS to CSS (if modifying SCSS):
+
+   ```bash
+   npm run build
+   ```
+
+5. Open the `index.html` file in your browser to view the component:
 
    ```bash
    open index.html
    ```
 
-   Alternatively, you can use the Live Server extension in Visual Studio Code or any local development server of your choice.
+   Alternatively, use a local development server like `Live Server` in Visual Studio Code.
 
 ## How It Works
 
 1. **Form Submission**:
-   - The user must enter a valid email address and check the agreement checkbox before the form can be submitted.
-   - The form performs email validation using a regular expression and ensures that the agreement checkbox is checked.
+   - Users must provide a valid email and check the terms and conditions checkbox before submission.
+   - The form uses JavaScript to validate the email format and ensure compliance with the terms.
 
 2. **Popup Display**:
-   - Upon successful validation, the popup appears, showing a thank-you message.
-   - The user can close the popup by clicking the close (×) button.
+   - After successful form validation, a popup is displayed thanking the user for subscribing.
+   - Users can close the popup by clicking the close (×) button or anywhere outside the popup.
 
-3. **Responsive Behavior**:
-   - The component layout adjusts for smaller screen sizes using media queries.
-   - On mobile devices, the email input field and subscribe button are displayed in a column layout for better usability.
+3. **Responsive Layout**:
+   - The component uses Bootstrap’s grid system and utility classes for responsiveness.
+   - Custom SCSS media queries further refine the layout for mobile and tablet devices.
 
 ## Folder Structure
 
 ```bash
 ├── index.html             # Main HTML file
-├── style.css              # Custom CSS file
-└── script.js              # JavaScript file for form validation and popup logic
+├── style.scss             # SCSS file for modular styles
+├── style.css              # Compiled CSS file
+├── script.js              # JavaScript file for validation and interactions
+└── assets/                # Contains images, fonts, and other assets
 ```
 
 ## Customization
 
 ### Styling
 
-To customize the look and feel of the component, you can modify the CSS file (`style.css`). Some key areas you can customize:
+To modify the design, edit the `style.scss` file. Key areas to customize:
 
-- **Colors**: Modify background colors, text colors, and button colors.
-- **Font**: Change the fonts by updating the `@import` line to use a different Google Font.
-- **Layout**: Adjust padding, margins, and flexbox properties to change the layout or spacing of elements.
+- **Colors**: Update the `$primary-color`, `$background-color`, and other SCSS variables.
+- **Typography**: Adjust the fonts by changing the `@import` statement for Google Fonts.
+- **Spacing**: Modify margins, paddings, or grid gaps using Bootstrap classes or custom SCSS variables.
 
 ### JavaScript Logic
 
-To change the behavior of the form or popup, you can edit the `script.js` file. You can:
+To adjust form or popup behavior, edit the `script.js` file. You can:
 
-- Update the email validation logic by modifying the regular expression pattern.
-- Change how the popup behaves (e.g., auto-close after a few seconds).
+- Change the email validation pattern to fit your specific requirements.
+- Customize the popup behavior, such as adding an auto-close feature.
 
 ## Responsiveness
 
-This project uses media queries to ensure that the component looks good on different screen sizes. In the `style.css` file, you will find a media query targeting screens smaller than `720px` to adjust the layout for mobile devices.
+This project combines Bootstrap’s responsive utilities and SCSS media queries to adapt the layout to various screen sizes. The design ensures:
+
+- Inputs and buttons are aligned horizontally on larger screens.
+- A stacked column layout is used on smaller screens for better usability.
 
 ## License
 
@@ -103,4 +121,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-This project is inspired by the FrontendPro challenges, which provide developers with opportunities to enhance their frontend skills through real-world coding exercises.
+Inspired by [FrontendPro Challenges](https://www.frontendpro.dev/) to enhance frontend development skills through hands-on coding exercises.
