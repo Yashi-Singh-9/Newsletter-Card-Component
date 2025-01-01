@@ -28,7 +28,7 @@ This project is a solution for the [FrontendPro Newsletter Card Component Challe
 
 ## Live Demo 
 
-Have a Live Preview: https://newsletter-card-component.netlify.app/
+Have a Live Preview: https://yashi-singh-9.github.io/Newsletter-Card-Component/
 
 ## Installation and Setup
 
